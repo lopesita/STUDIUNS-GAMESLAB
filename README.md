@@ -1,5 +1,7 @@
 *Olá! seja bem-vindo ao projeto aplicado I da universidade presbiteriana Mackenzie!*
+
 #Os alunos participantes do projeto são: Italo Aparecido Lopes / Rafael Augusto Alba / Nathan Sampaio Santana dos Santos.
+
 #Este projeto tem como foco apresentar os resultados da pesquisa acadêmica que será realizada em torno de uma empresa Fictícia. 
 
 #A propósito a empresa se chama Stadiuns GameLab e foi fundada em 2024 com a missão de entender qual o gênero de jogos em ascendência dos últimos anos para as plataformas de PC.
