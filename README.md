@@ -2,7 +2,7 @@
 
 Seja bem-vindo ao **Projeto Aplicado I** da **Universidade Presbiteriana Mackenzie**!
 
-Este projeto foi desenvolvido por **Italo Aparecido Lopes**, **Rafael Augusto Alba**. Ele tem como foco a análise de tendências de mercado relacionadas a lançamentos de jogos na plataforma Steam.
+Este projeto foi desenvolvido por **Italo Aparecido Lopes** e **Rafael Augusto Alba**. Ele tem como foco a análise de tendências de mercado relacionadas a lançamentos de jogos na plataforma Steam.
 
 ## Objetivo do Projeto
 
