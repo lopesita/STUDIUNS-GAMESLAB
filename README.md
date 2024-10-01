@@ -60,7 +60,6 @@ Com essas considerações, a pesquisa caminha para uma análise mais completa so
 ## Código
 
 ```python
-# Exemplo de código em Python usado no projeto
 
 # Limpar e converter a coluna 'discounted_price' para numérico
 steam_data['discounted_price'] = pd.to_numeric(
