@@ -1,4 +1,4 @@
-# Stadiuns GameLab - Projeto Aplicado I
+# TENDÊNCIAS E IMPACTOS DE MERCADO NA TRAJETÓRIA DE LANÇAMENTOS DE JOGOS DA STEAM - Projeto Aplicado I
 
 Seja bem-vindo ao **Projeto Aplicado I** da **Universidade Presbiteriana Mackenzie**!
 
