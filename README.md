@@ -38,12 +38,8 @@ Este trabalho tem como objetivo analisar a evolução dos gêneros de jogos publ
 
 ## Conclusões
 
-A análise mostrou que gêneros como **Ação** e **Aventura** continuam dominando o mercado, enquanto jogos **Indie** estão ganhando espaço.
+A pesquisa mostrou que gêneros como Ação e Aventura continuam a dominar o mercado, enquanto gêneros emergentes, como Indie, ganham força, impulsionados pela acessibilidade de ferramentas e plataformas. No entanto, ainda há questões não totalmente exploradas, como a influência dos preços elevados em certos gêneros. A relação entre a aceitação do público e o preço de determinados jogos merece uma análise mais profunda, já que o custo pode ser um fator decisivo nas avaliações negativas. A questão dos preços elevados nos gêneros com maior investimento ou em jogos de nicho ainda precisa ser investigada. Essa investigação poderia buscar entender como a percepção de valor impacta as vendas e avaliações, especialmente para jogos de alto custo que prometem experiências premium.
 
-## Como Contribuir
+A análise dos dados nos permitiu identificar tendências de crescimento em gêneros que têm se beneficiado de uma maior acessibilidade de desenvolvimento, como os jogos Casual e Indie. Esses gêneros, além de atrair novos jogadores, tendem a manter uma base sólida devido aos preços mais acessíveis. Entretanto, o custo elevado de jogos mais complexos pode explicar parte das críticas negativas, sugerindo uma necessidade de balanceamento entre preço e qualidade percebida. A falta de clareza sobre o impacto dos preços altos, especialmente em gêneros com produções maiores, é um aspecto que ainda precisa ser aprofundado para uma compreensão completa do comportamento dos jogadores e do mercado.
 
-Contribuições são bem-vindas! Siga os passos para colaborar com o projeto.
-
-## Licença
-
-Este projeto é licenciado sob a **Licença MIT**.
+Com essas considerações, a pesquisa caminha para uma análise mais completa sobre o mercado de jogos, investigando como fatores econômicos, como o preço, impactam a recepção de títulos específicos e gêneros. O tema central de como as tendências de lançamento e popularidade dos jogos evoluem será enriquecido ao integrar essas variáveis, proporcionando um entendimento mais robusto do mercado de jogos digitais.
