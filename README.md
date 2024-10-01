@@ -1,18 +1,49 @@
-*Olá! seja bem-vindo ao projeto aplicado I da universidade presbiteriana Mackenzie!*
+# Stadiuns GameLab - Projeto Aplicado I
 
-*Os alunos participantes do projeto são: Italo Aparecido Lopes / Rafael Augusto Alba / Nathan Sampaio Santana dos Santos.*
+Seja bem-vindo ao **Projeto Aplicado I** da **Universidade Presbiteriana Mackenzie**!
 
-*Este projeto tem como foco apresentar os resultados da pesquisa acadêmica que será realizada em torno de uma empresa Fictícia.*
+Este projeto foi desenvolvido por **Italo Aparecido Lopes**, **Rafael Augusto Alba**. Ele tem como foco a análise de tendências de mercado relacionadas a lançamentos de jogos na plataforma Steam.
 
-*A propósito a empresa se chama Stadiuns GameLab e foi fundada em 2024 com a missão de entender qual o gênero de jogos em ascendência dos últimos anos para as plataformas de PC.*
+## Objetivo do Projeto
 
-# Os dados obtidos no dataset explicam todas as vendas ocorridas nos anos 1997 a 2024 para a plataforma de computadores pessoais sob o domínio da loja virtual Steam.
-# Sendo o arquivo também capaz de descrever os títulos lançados, a quantidade de produtos, bem como a divisão dos gêneros, notas dos usuários,
-# as desenvolvedoras e a contagem de downloads dos respectivos jogos lançados. As limitações da pesquisa giram em torno das demais plataformas de jogos, 
-# uma vez que conforme supracitado, trata-se somente das vendas processadas pela empresa Valve Corporation (Steam). Tal fato limita a pesquisa para uma maior 
-# abrangências das informações do mercado de jogos, o que pode ser uma característica tendenciosa para as explanações a serem realizadas neste projeto. 
-# Os dados obtidos neste DataSet servirão como base para a exploração das seguintes tendências:
-# maiores gêneros dos últimos anos, critica dos usuários, preço, quantidade de lançamentos por ano e demais achados analíticos.
+Este trabalho tem como objetivo analisar a evolução dos gêneros de jogos publicados na plataforma Steam, identificando tendências de crescimento e declínio entre 1997 e 2024.
 
-*Todas as pesquisas aqui, visam também a demonstração de códigos em Python/R referente aos achados analiticos feita sobre os dados aqui anexados. Fique à vontade para explorá-los!.*
+## Descrição do Dataset
 
+- **Título do Jogo** (*title*)
+- **Gênero** (*genres*)
+- **Desenvolvedor** (*developer*)
+- **Publisher** (*publisher*)
+- **Avaliação Geral** (*overall_review*)
+- **Preço com Desconto** (*discounted_price*)
+
+## Funcionalidades
+
+- Análise dos principais gêneros de jogos lançados ao longo dos anos.
+- Estudo das avaliações dos usuários e como elas impactam as tendências de jogos.
+- Exame dos preços e sua relação com a aceitação do público.
+
+## Como Usar
+
+1. Clone este repositório:
+    ```bash
+    git clone https://github.com/seu-usuario/seu-repositorio.git
+    ```
+2. Instale as dependências:
+    ```bash
+    pip install -r requirements.txt
+    ```
+3. Explore os notebooks:
+    - **PA1.ipynb**: Contém as principais análises.
+
+## Conclusões
+
+A análise mostrou que gêneros como **Ação** e **Aventura** continuam dominando o mercado, enquanto jogos **Indie** estão ganhando espaço.
+
+## Como Contribuir
+
+Contribuições são bem-vindas! Siga os passos para colaborar com o projeto.
+
+## Licença
+
+Este projeto é licenciado sob a **Licença MIT**.
