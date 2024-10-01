@@ -10,6 +10,8 @@ Este trabalho tem como objetivo analisar a evolução dos gêneros de jogos publ
 
 ## Descrição do Dataset
 
+O dataset contém as seguintes informações principais sobre os jogos:
+
 - **Título do Jogo** (*title*)
 - **Gênero** (*genres*)
 - **Desenvolvedor** (*developer*)
@@ -19,6 +21,8 @@ Este trabalho tem como objetivo analisar a evolução dos gêneros de jogos publ
 
 ## Funcionalidades
 
+Este projeto oferece as seguintes funcionalidades:
+
 - Análise dos principais gêneros de jogos lançados ao longo dos anos.
 - Estudo das avaliações dos usuários e como elas impactam as tendências de jogos.
 - Exame dos preços e sua relação com a aceitação do público.
@@ -26,20 +30,58 @@ Este trabalho tem como objetivo analisar a evolução dos gêneros de jogos publ
 ## Como Usar
 
 1. Clone este repositório:
+
     ```bash
     git clone https://github.com/seu-usuario/seu-repositorio.git
     ```
-2. Instale as dependências:
+
+2. Instale as dependências necessárias (Python/R):
+
     ```bash
     pip install -r requirements.txt
     ```
-3. Explore os notebooks:
-    - **PA1.ipynb**: Contém as principais análises.
+
+3. Explore os notebooks disponíveis para visualizar as análises e gráficos:
+
+    - **PA1.ipynb**: Contém as principais análises realizadas sobre o dataset da Steam, com gráficos e insights sobre gêneros de jogos, preços e avaliações.
 
 ## Conclusões
 
-A pesquisa mostrou que gêneros como Ação e Aventura continuam a dominar o mercado, enquanto gêneros emergentes, como Indie, ganham força, impulsionados pela acessibilidade de ferramentas e plataformas. No entanto, ainda há questões não totalmente exploradas, como a influência dos preços elevados em certos gêneros. A relação entre a aceitação do público e o preço de determinados jogos merece uma análise mais profunda, já que o custo pode ser um fator decisivo nas avaliações negativas. A questão dos preços elevados nos gêneros com maior investimento ou em jogos de nicho ainda precisa ser investigada. Essa investigação poderia buscar entender como a percepção de valor impacta as vendas e avaliações, especialmente para jogos de alto custo que prometem experiências premium.
+A pesquisa mostrou que gêneros como **Ação** e **Aventura** continuam a dominar o mercado, enquanto gêneros emergentes, como **Indie**, ganham força, impulsionados pela acessibilidade de ferramentas e plataformas. No entanto, ainda há questões não totalmente exploradas, como a influência dos preços elevados em certos gêneros. 
 
-A análise dos dados nos permitiu identificar tendências de crescimento em gêneros que têm se beneficiado de uma maior acessibilidade de desenvolvimento, como os jogos Casual e Indie. Esses gêneros, além de atrair novos jogadores, tendem a manter uma base sólida devido aos preços mais acessíveis. Entretanto, o custo elevado de jogos mais complexos pode explicar parte das críticas negativas, sugerindo uma necessidade de balanceamento entre preço e qualidade percebida. A falta de clareza sobre o impacto dos preços altos, especialmente em gêneros com produções maiores, é um aspecto que ainda precisa ser aprofundado para uma compreensão completa do comportamento dos jogadores e do mercado.
+A relação entre a aceitação do público e o preço de determinados jogos merece uma análise mais profunda, já que o custo pode ser um fator decisivo nas avaliações negativas. Jogos de alto custo que prometem experiências premium, mas não atendem às expectativas, podem sofrer avaliações negativas mais acentuadas.
+
+A análise dos dados permitiu identificar tendências de crescimento em gêneros como **Casual** e **Indie**, que atraem novos jogadores e mantêm uma base sólida devido aos preços mais acessíveis. Contudo, o custo elevado de jogos mais complexos pode explicar parte das críticas negativas, sugerindo a necessidade de balanceamento entre preço e qualidade percebida.
+
+### Considerações Finais
 
 Com essas considerações, a pesquisa caminha para uma análise mais completa sobre o mercado de jogos, investigando como fatores econômicos, como o preço, impactam a recepção de títulos específicos e gêneros. O tema central de como as tendências de lançamento e popularidade dos jogos evoluem será enriquecido ao integrar essas variáveis, proporcionando um entendimento mais robusto do mercado de jogos digitais.
+
+## Código
+
+```python
+# Exemplo de código em Python usado no projeto
+
+# Limpar e converter a coluna 'discounted_price' para numérico
+steam_data['discounted_price'] = pd.to_numeric(
+    steam_data['discounted_price'].replace({'Free': 0, '₹': '', 'NaN': None}, regex=True),
+    errors='coerce'
+)
+
+# Extrair o gênero antes da primeira vírgula
+steam_data['primary_genre'] = steam_data['genres'].apply(lambda x: x.split(',')[0] if pd.notnull(x) else None)
+
+# Agrupar por gênero e calcular o preço médio para os 10 gêneros mais caros
+top_10_genres = steam_data.groupby('primary_genre')['discounted_price'].mean().sort_values(ascending=False).head(10)
+
+# Plotar os 10 principais gêneros por preço médio
+import matplotlib.pyplot as plt
+
+plt.figure(figsize=(10, 6))
+top_10_genres.plot(kind='bar', color='skyblue')
+plt.title('Top 10 Gêneros por Preço Médio com Desconto')
+plt.ylabel('Preço Médio')
+plt.xlabel('Gêneros')
+plt.xticks(rotation=45, ha='right')
+plt.tight_layout()
+plt.show()
