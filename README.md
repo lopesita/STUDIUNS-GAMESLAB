@@ -84,3 +84,5 @@ plt.xlabel('Gêneros')
 plt.xticks(rotation=45, ha='right')
 plt.tight_layout()
 plt.show()
+
+Link para apresentação dos resultados: https://discord.com/channels/1282459294436163594/1282459294436163598/1310780191626498129
